@@ -1,0 +1,38 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to Selectronic SP PRO",
+        "description": "Enter the local IP address or hostname of your Select.live gateway. Leave Device ID blank to auto-discover your SP PRO inverter.",
+        "data": {
+          "host": "Select.live Local IP Address / Hostname",
+          "device_id": "Device ID (Optional - auto-discovered if blank)",
+          "use_https": "Use HTTPS",
+          "verify_ssl": "Verify SSL Certificate",
+          "off_grid_mode": "Off-Grid Mode (label Grid AC input as Generator)",
+          "scan_interval": "Polling Interval (seconds)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to the Select.live gateway. Verify the IP address and local network connectivity.",
+      "no_devices_found": "Connected to gateway, but no Selectronic SP PRO devices were discovered.",
+      "invalid_response": "Received an unexpected response from the Select.live endpoint.",
+      "unknown": "Unexpected error occurred during setup."
+    },
+    "abort": {
+      "already_configured": "This Selectronic SP PRO inverter is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Selectronic SP PRO Options",
+        "data": {
+          "scan_interval": "Polling Interval (seconds)",
+          "off_grid_mode": "Off-Grid Mode (label Grid AC input as Generator)"
+        }
+      }
+    }
+  }
+}
